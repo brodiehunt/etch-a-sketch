@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etch-A-Sketch</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+
+  <h1> Etch A Sketch</h1>
+  <div class="grid-container" id="grid_container_el">
+
+  </div>
+  <div class="controls-container">
+    <button class="btn refresh-grid-btn" id="refresh_grid_btn">Refresh Canvas</button>
+    <button class="btn eraser" id="erase_btn">Eraser</button>
+    <div class="input-container">
+      <label for="color_input">Color Picker</label>
+      <input type="color" id="color_input" class="color_input" value="#000000">
+    </div>
+    <div class="input-container">
+      <label for="grid_dimension_input">Grid Dimensions</label>
+      <input type="range" class="grid-dimension-input" id="grid_dimension_input" min="10" max="100" name="Dimension">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
